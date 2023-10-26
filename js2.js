@@ -11,3 +11,8 @@ a = 'lorem ipsum dolor';
 b = a.length;
 console.log(b);
 
+a = 'lorem ipsum dolor sit amet'
+let words = a.split(' ')
+let reversedWords = [words[3], ...words.slice(0, 3), words[4]]
+let result = reversedWords.join(' ')
+console.log(result)
